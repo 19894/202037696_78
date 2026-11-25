@@ -1,0 +1,41 @@
+Python 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+... voltios = 24.0
+... chequeo_baterias = True
+... lecturas = 0
+...
+... while chequeo_baterias and lecturas < 10:
+...
+...     if voltios > 30:
+...         print("PELIGRO: Sobretension extrema. Fusible abierto.")
+...         chequeo_baterias = False
+...
+...     elif voltios < 21:
+...         print("Proteccion: Desconexion de carga por descarga")
+...         voltios += 1.0
+...
+...     elif 21 <= voltios <= 27.5:
+...         print("Proteccion: Sistema operativo en flotacion")
+...         voltios += 0.2
+...
+...     else:
+...         print("Proteccion: Disipador termico activado")
+...         voltios -= 1.5
+...
+...     lecturas += 1
+...
+... print("Monitoreo finalizado.")
+...
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Proteccion: Sistema operativo en flotacion
+Monitoreo finalizado.
+>>>
