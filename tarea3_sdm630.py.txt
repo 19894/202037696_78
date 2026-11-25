@@ -1,0 +1,54 @@
+
+
+...     },
+...
+...     "corriente_L1": {
+...         "registro": "0x06",
+...         "phase": "L1",
+...         "data_format": "Float32",
+...         "alarm_threshold": None
+...     },
+...
+...     "frecuencia": {
+...         "registro": "0x46",
+...         "phase": "Sistema",
+...         "data_format": "Float32",
+...         "alarm_threshold": 52.0
+...     }
+... }
+...
+... print("MAPEO DE REGISTROS - SENSOR SDM630")
+... print("----------------------------------")
+...
+... for variable, datos in registros_sdm630.items():
+...     print("Variable:", variable)
+...     print("Registro:", datos["registro"])
+...     print("Fase:", datos["phase"])
+...     print("Formato:", datos["data_format"])
+...     print("Umbral de alarma:", datos["alarm_threshold"])
+...     print("----------------------------------")
+...
+... print("Verificacion del mapeo finalizada.")
+...
+MAPEO DE REGISTROS - SENSOR SDM630
+----------------------------------
+Variable: voltaje_L1
+Registro: 0x00
+Fase: L1
+Formato: Float32
+Umbral de alarma: None
+----------------------------------
+Variable: corriente_L1
+Registro: 0x06
+Fase: L1
+Formato: Float32
+Umbral de alarma: None
+----------------------------------
+Variable: frecuencia
+Registro: 0x46
+Fase: Sistema
+Formato: Float32
+Umbral de alarma: 52.0
+----------------------------------
+Verificacion del mapeo finalizada.
+>>>
