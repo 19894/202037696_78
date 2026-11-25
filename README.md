@@ -20,7 +20,7 @@ Archivo: tarea3_sdm630.py.txt
 Programa desarrollado en Python para organizar y visualizar los registros del sensor de energía Eastron SDM630 mediante el uso de diccionarios. Incluye información del voltaje, corriente y frecuencia.
 
 ### 3. Tarea 4 – Optimización
-Archivo: tarea4_optimizacion.py.txt
+Archivo: tarea4_optimización.py.txt
 
 Programa de simulación desarrollado en Python para validar lecturas de frecuencia dentro de un rango establecido y medir el tiempo de ejecución del proceso.
 
