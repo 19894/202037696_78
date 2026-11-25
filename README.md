@@ -33,7 +33,7 @@ Programa de simulación desarrollado en Python para validar lecturas de frecuenc
 Organizar y conservar los códigos desarrollados durante las actividades del curso, facilitando su consulta, revisión y seguimiento.
 
 ## Autor
-Cristian Camilo Ortiz Diaz
+Cristian Camilo Ortiz Díaz
 
 ## Programa académico
 Ingeniería Electrónica
