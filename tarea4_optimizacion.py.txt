@@ -1,0 +1,41 @@
+
+
+...     60.0 + ((i % 11) - 5) * 0.1
+...     for i in range(4000)
+... ]
+...
+... # Rango permitido de frecuencia
+... frecuencia_minima = 59.5
+... frecuencia_maxima = 60.5
+...
+... # Optimizacion mediante ciclo for
+... inicio = time.perf_counter()
+...
+... lecturas_validas = 0
+...
+... for frecuencia in lecturas:
+...     if frecuencia_minima <= frecuencia <= frecuencia_maxima:
+...         lecturas_validas += 1
+...
+... fin = time.perf_counter()
+...
+... tiempo_ejecucion = fin - inicio
+...
+... print("OPTIMIZACION DE SINCRONIZACION")
+... print("--------------------------------")
+... print("Total de lecturas:", len(lecturas))
+... print("Lecturas validas:", lecturas_validas)
+... print("Frecuencia minima:", frecuencia_minima, "Hz")
+... print("Frecuencia maxima:", frecuencia_maxima, "Hz")
+... print("Tiempo de ejecucion:", tiempo_ejecucion, "segundos")
+... print("Proceso de optimizacion finalizado.")
+...
+OPTIMIZACION DE SINCRONIZACION
+--------------------------------
+Total de lecturas: 4000
+Lecturas validas: 4000
+Frecuencia minima: 59.5 Hz
+Frecuencia maxima: 60.5 Hz
+Tiempo de ejecucion: 0.0013176999054849148 segundos
+Proceso de optimizacion finalizado.
+>>>
